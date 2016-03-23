@@ -27,7 +27,7 @@
         'views/debt.xml',
     ],
      'qweb': [
-        'views/web.xml',
+        'views/debviews.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

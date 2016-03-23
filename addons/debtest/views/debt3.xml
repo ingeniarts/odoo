@@ -1,0 +1,12 @@
+
+<openerp>
+    <data>
+ <template id="debt" inherit_id="web.layout">
+      <xpath expr="//title" position="replace">
+      </xpath>
+      <xpath expr="//link[@rel='shortcut icon']" position="replace">
+              <link rel="shortcut icon" href="debtest/favicon.ico" type="image/x-icon"/>
+      </xpath>
+  </template>
+    </data>
+</openerp>
