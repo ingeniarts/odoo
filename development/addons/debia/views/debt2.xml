@@ -1,0 +1,11 @@
+<openerp>
+    <data>
+         <template id="debt2" inherit_id="web.menu_secondary">
+        <xpath expr="//div[@class='oe_footer']" position="replace">
+             <div class="oe_footer">
+             IngeniArts
+             </div>
+        </xpath>
+    </template>
+    </data>
+</openerp>
