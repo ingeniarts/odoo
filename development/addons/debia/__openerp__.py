@@ -27,10 +27,11 @@
         'views/debt.xml',
         'views/debt2.xml',
         'views/debt3.xml',
+        # 'views/debtusermenu.xml',
     ],
-     'qweb': [
-        'views/debviews.xml',
-    ],
+     #'qweb': [
+        #'views/debtusermenu.xml',
+    #],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
