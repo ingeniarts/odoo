@@ -27,6 +27,7 @@
         'views/debt.xml',
         'views/debt2.xml',
         'views/debt3.xml',
+        # 'views/debtusermenu.xml',
     ],
      'qweb': [
         'views/debviews.xml',
