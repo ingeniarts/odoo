@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ia_pdfreport_template_ia_pdfreport_template,ia_pdfreport_template.ia_pdfreport_template,model_ia_pdfreport_template_ia_pdfreport_template,,1,0,0,0
