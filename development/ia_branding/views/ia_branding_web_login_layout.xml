@@ -1,9 +1,0 @@
-<openerp>
-    <data>
-        <!-- <data noupdate="1">-->
-      <template id="ia_branding_web_login_layout" inherit_id="web.login_layout" priority="8">
-       <xpath expr="//div[@t-if='not disable_footer']" position="replace"></xpath>
-    </template>
-    </data>
-</openerp>
-
