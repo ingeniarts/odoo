@@ -9,4 +9,6 @@ même chose pour les reports!
 
 25 mars : le "debranding" avance très bien .. haha, par contre, j'ai vrm de la difficulté à modifier le "company data" à partir d'un module
 
-28 mars : nouveau module, ia_pdftemplate // en bref, il s'agit du travail que j'avais fait sur le template du report_purchaseorder_document (sans créer de module custom), mais cette x, correctement bâti. À comparer à ce que tu as fait sur le même dossier (mais que tu n'as pas push?)
+28 mars : nouveau module, ia_pdftemplate // en bref, il s'agit du travail que j'avais fait sur le template du report_purchaseorder_document (sans créer de module custom), mais cette x, correctement bâti. À comparer à ce que tu as fait sur le même dossier
+
+29 mars : ia_pdftemplate, ia_po.xml version '0' (inherit = report_purchaseorder_document)
