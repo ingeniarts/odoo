@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-    <data noupdate="1">
+    <data noupdate="0">
         <!--
         <record id="view_menu" model="ir.ui.view">
             <field name="name">ir.ui.menu.tree</field>
@@ -24,26 +24,30 @@
 
         <function name="install_lang" model="res.lang"/>
         -->
-        <record id="main_partner" model="res.partner" context="{'default_is_company': True}">
-            <field name="name">Hobbit</field>
-            <field name="company_id" eval="1"/>
-            <field name="image" type="base64" file="base/static/img/main_partner-image.png"/>
+        <record model="res.partner" context="{'default_is_company': True}">
+            <field name="overriden_id" ref="base.main_partner" />
+            <field name="name">Ingeniarts Technologies inc.</field>
+            <field name="company_id" eval="None"/>
+            <field name="image" type="base64" file="ia_base/static/img/ia_logo.png"/>
             <field name="customer" eval="False"/>
             <field name="is_company" eval="True"/>
-            <field name="street"></field>
-            <field name="city">Calcuta</field>
-            <field name="zip"></field>
-            <field name="phone"></field>
-            <field name="email">info@yourcompany.com</field>
-            <field name="website">www.yourcompany.com</field>
+            <field name="street">10-2435, avenue Watt</field>
+            <field name="city">Québec</field>
+            <field name="state_id" ref="l10n_ca_toponyms.QC"/>
+            <field name="country_id" ref="base.ca"/>
+            <field name="zip">G1P 3X2</field>
+            <field name="phone">418-905-4004</field>
+            <field name="email">info@ingeniarts.com</field>
+            <field name="website">http://www.ingeniarts.com/</field>
         </record>
 
         <!-- Basic Company  -->
-        <record id="main_company" model="res.company">
-            <field name="name">My Company</field>
-            <field name="partner_id" ref="main_partner"/>
-            <field name="rml_header1">My Company Tagline</field>
-            <field name="currency_id" ref="base.EUR"/>
+        <record model="res.company">
+            <field name="overriden_id" ref="base.main_company" />
+            <field name="name">Ingeniarts Technologies inc.</field>
+            <field name="partner_id" ref="base.main_partner"/>
+            <field name="rml_header1"></field>
+            <field name="currency_id" ref="base.CAD"/>
         </record>
 <!--
         <record model="res.partner" id="base.partner_root">

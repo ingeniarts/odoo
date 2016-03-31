@@ -10,9 +10,9 @@
     'author': '',
     'maintainer': '',
     'website': '',
-    'depends': [],
+    'depends': ["base", "l10n_ca", "l10n_ca_toponyms"],
     'data': [
-        'base_data.xml',
+        'ia_base_data.xml',
         #'res/res_currency_data.xml',
         #'res/res_country_data.xml',
         #'security/base_security.xml',
