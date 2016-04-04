@@ -24,6 +24,12 @@
 
         <function name="install_lang" model="res.lang"/>
         -->
+
+        <record id="lang_fr_CA" model="base.language.install">
+            <field name="lang">fr_CA</field>
+        </record>
+        <function name="lang_install" model="base.language.install" eval="(ref('lang_fr_CA'),)"/>
+
         <record model="res.partner" context="{'default_is_company': True}">
             <field name="overriden_id" ref="base.main_partner" />
             <field name="name">Ingeniarts Technologies inc.</field>
