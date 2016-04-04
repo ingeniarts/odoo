@@ -35,6 +35,8 @@
             <field name="date_format">%Y-%m-%d</field>
         </record>
 
+        <function name="install_lang" model="res.lang"/>
+
         <record model="res.partner" context="{'default_is_company': True}">
             <field name="overriden_id" ref="base.main_partner" />
             <field name="name">Ingeniarts Technologies inc.</field>
