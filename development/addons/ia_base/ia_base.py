@@ -6,6 +6,26 @@ import pdb
 
 _logger = logging.getLogger(__name__)
 
+class IAModelData(models.Model):
+    _inherit = "ir.model.data"
+
+    @api.model
+    def set_noupdate(self, external_id, new_noupdate_value):
+        record_ids = self.search([('name', '=', external_id)])
+        record_ids.write({'noupdate': new_noupdate_value})
+
+class IALang(models.Model):
+    _inherit = "res.lang"
+
+    @api.model
+    def create(self, vals):
+        if 'code' in vals:
+            lang_records = self.search([('code', '=', vals['code'])])
+            if len(lang_records) == 0:
+                return super(IALang, self).create(vals)
+            else:
+                return self
+
 
 class IAPartner(models.Model):
     _inherit = "res.partner"

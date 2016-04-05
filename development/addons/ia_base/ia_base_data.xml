@@ -15,7 +15,9 @@
 
         <function name="install_lang" model="res.lang"/>
 
-        <record model="res.partner" context="{'default_is_company': True}">
+        <function name="set_noupdate" model="ir.model.data" eval="('main_partner', False)"/>
+
+        <record id="main_partner" model="res.partner" context="{'default_is_company': True}">
             <field name="overriden_id" ref="base.main_partner" />
             <field name="name">Ingeniarts Technologies inc.</field>
             <field name="company_id" eval="None"/>
@@ -32,7 +34,9 @@
             <field name="website">http://www.ingeniarts.com/</field>
         </record>
 
-        <record model="res.company">
+        <function name="set_noupdate" model="ir.model.data" eval="('main_company', False)"/>
+
+        <record id="main_company" model="res.company">
             <field name="overriden_id" ref="base.main_company" />
             <field name="name">Ingeniarts Technologies inc.</field>
             <field name="partner_id" ref="base.main_partner"/>
