@@ -6,12 +6,12 @@
     <t t-jquery=".dropdown-menu" t-operation="replace">
         <ul class="dropdown-menu">
             <li><a href="#" data-menu="settings">Preferences</a></li>
-            <li><a href="#" data-menu="about">Dev. mode</a></li>
+            <li><a href="?debug">Dev. mode</a></li>
             <li><a href="#" data-menu="logout">Log out</a></li>
         </ul>
     </t>
 </t>
-    <!-- logo2 -->
+    <!-- logo2
     <t t-extend="UserMenu.about">
 <t t-jquery=".container-fluid" t-operation="replace">
   <div class="container-fluid">
@@ -27,7 +27,7 @@
         </div>
   </div>
 </t>
-</t>
+</t> -->
 </templates>
 
 
