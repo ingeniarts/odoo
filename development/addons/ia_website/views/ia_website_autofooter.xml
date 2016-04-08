@@ -2,29 +2,21 @@
 <openerp>
     <data>
         <template id="ia_website_autofooter" inherit_id="website.footer_default">
-            <xpath expr="//div[@id='footer']" position="replace"/>
-
- <div id="footer" class="container hidden-print">
+            <xpath expr="//div[@class='row']" position="replace">
             <div class="row">
                 <div class="col-md-4 col-lg-3">
-                    <h4><strong>twoMove</strong></h4>
+
+                        <strong>
+                            <p style="color:blue;font-size:25px;vertical-align:bottom;">TWO<span style="color:black;font-size:30px;vertical-align:top;">M</span><span style="color:green;font-size:25px;vertical-align:top;">OVE</span></p>
+                        </strong>
+
+                        <!--<h4 style="color:blue;"><strong>two</strong></h4><h4><strong>M</strong></h4><h4 style="color:green;"><strong>ove</strong></h4>-->
                     <div>
                     Power &amp; Energy
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-5 col-lg-offset-1">
-                    <h5>
-                        <span t-field="res_company.name"/>
-                        <small>Language</small>
-                    </h5>
-                    <div>
-                    </div>
-                    <t t-call="website.language_selector"/>
-                </div>
             </div>
-        </div>
-
-            </xpath>
+        </xpath>
         </template>
     </data>
 </openerp>

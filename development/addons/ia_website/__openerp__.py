@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'auto_install': False,
+
     'installable': True,
+    'auto_install': False,
+
     'name': "ia_website",
 
     'summary': """
@@ -12,7 +14,7 @@
         Long description of module's purpose
     """,
 
-    'author': "LP",
+    'author': "LP v0",
     'website': "http://www.ingeniarts.com",
 
     # Categories
@@ -25,9 +27,9 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
         'views/ia_website_footer.xml',
         'views/ia_website_autofooter.xml',
+        'views/ia_website_homepage.xml',
     ],
      #'qweb': [
      #   'static/src/xml/ia_website.xml',

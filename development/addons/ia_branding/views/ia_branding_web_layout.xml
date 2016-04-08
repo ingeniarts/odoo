@@ -5,7 +5,7 @@
                 <title>Ingeniarts</title>
             </xpath>
             <link rel="shortcut icon" position="attributes">
-                <attribute name="href">static/src/img/favicon.ico</attribute>
+                <attribute name="href">/ia_branding/static/src/img/favicon.ico</attribute>
             </link>
         </template>
     </data>
