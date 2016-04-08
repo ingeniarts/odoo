@@ -24,12 +24,12 @@
             <field name="image" type="base64" file="ia_base/static/img/ia_logo.png"/>
             <field name="customer" eval="False"/>
             <field name="is_company" eval="True"/>
-            <field name="street">10-2435, avenue Watt</field>
+            <field name="street">2435 avenue Watt, suite 10</field>
             <field name="city">Québec</field>
             <field name="state_id" ref="l10n_ca_toponyms.QC"/>
             <field name="country_id" ref="base.ca"/>
             <field name="zip">G1P 3X2</field>
-            <field name="phone">418-905-4004</field>
+            <field name="phone">(+1)450-899-0000</field>
             <field name="email">info@ingeniarts.com</field>
             <field name="website">http://www.ingeniarts.com/</field>
         </record>
@@ -38,9 +38,9 @@
 
         <record id="main_company" model="res.company">
             <field name="overriden_id" ref="base.main_company" />
-            <field name="name">Ingeniarts Technologies inc.</field>
+            <field name="name">Ingeniarts</field>
             <field name="partner_id" ref="base.main_partner"/>
-            <field name="rml_header1"></field>
+            <field name="rml_header1">Ingeniarts Technologies inc.</field>
             <field name="currency_id" ref="base.CAD"/>
         </record>
 
