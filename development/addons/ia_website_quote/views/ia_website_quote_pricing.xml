@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!--<template id="ia_website_quote_pricing" inherit_id="website_quote.pricing">
+
+            <xpath expr="//table[@class='table wq-table']" position="replace">
+
+            </xpath>
+        </template>-->
+    </data>
+</openerp>
